@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doutor do Site — atualização de PHP com segurança</title>
+  <meta name="description" content="Atualização da versão do PHP do seu site, com backup, cópia de teste e preço fechado. O PHP 8.2 perde o suporte oficial em 31/12/2026.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b3438">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b3438'/%3E%3Cpath d='M10 34h10l5-12 8 22 6-14 3 4h12' fill='none' stroke='%23f2b84b' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="draft-banner" role="note">Rascunho — esta página ainda não está publicada.</div>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="index.html" aria-label="Doutor do Site, página inicial">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14"/><path d="M10 34h10l5-12 8 22 6-14 3 4h12"/></svg>
+        <span class="logo-text">Doutor do Site<small>Check-up do seu site</small></span>
+      </a>
+      <nav aria-label="Principal">
+        <a href="#oferta">Oferta</a>
+        <a href="#como">Como trabalhamos</a>
+        <a href="#contato">Contato</a>
+        <a href="privacidade.html">Privacidade</a>
+        <a href="#descadastrar">Descadastrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="chip chip-warn"><span class="dot" aria-hidden="true"></span>Diagnóstico: PHP 8.2 perde o suporte em 31/12/2026</p>
+          <h1 id="hero-title">Deixe o PHP do seu site em dia, <span class="hl">sem aplicar mudanças direto no ar.</span></h1>
+          <p class="lede">O PHP 8.2 deixa de receber correções oficiais em 31/12/2026. Atualizamos a versão com backup, teste numa cópia do site e preço fechado antes do trabalho. Somos desenvolvedores com 9 anos de experiência em sites e sistemas web.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:contato@doutordosite.com.br?subject=Quero%20o%20check-up%20gratuito%20do%20meu%20site&amp;body=Ol%C3%A1%2C%20gostaria%20do%20check-up%20gratuito.%20Endere%C3%A7o%20do%20site%3A%20">
+              Pedir check-up gratuito
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#oferta">Ver pacotes e preços</a>
+          </div>
+          <p class="cta-note">Atendimento por escrito, em <a href="mailto:contato@doutordosite.com.br">contato@doutordosite.com.br</a>.</p>
+        </div>
+
+        <aside class="chart" aria-label="Prontuário: prazo do PHP 8.2">
+          <div class="chart-clip" aria-hidden="true"></div>
+          <div class="chart-head">
+            <span class="chart-title">Prontuário do site</span>
+            <span class="chip chip-small">Em observação</span>
+          </div>
+          <div class="countdown" data-deadline="2027-01-01T00:00:00-03:00">
+            <p class="cd-kicker">Fim do suporte oficial do PHP 8.2</p>
+            <p class="cd-static"><time datetime="2026-12-31">31 de dezembro de 2026</time></p>
+            <div class="cd-live" hidden>
+              <div class="cd-unit"><span class="cd-num" data-unit="d">00</span><span class="cd-lbl">dias</span></div>
+              <div class="cd-unit"><span class="cd-num" data-unit="h">00</span><span class="cd-lbl">horas</span></div>
+              <div class="cd-unit"><span class="cd-num" data-unit="m">00</span><span class="cd-lbl">min</span></div>
+            </div>
+            <p class="cd-date" hidden>até <time datetime="2026-12-31">31/12/2026</time></p>
+          </div>
+          <dl class="chart-rows">
+            <div><dt>Versão atual</dt><dd><span class="tag tag-warn">PHP 8.2</span></dd></div>
+            <div><dt>Destino</dt><dd><span class="tag tag-ok">PHP 8.3 ou 8.4</span></dd></div>
+            <div><dt>Backup completo</dt><dd><span class="check" aria-label="incluído">✓</span></dd></div>
+            <div><dt>Cópia de teste</dt><dd><span class="check" aria-label="incluída">✓</span></dd></div>
+            <div><dt>Plano de reversão</dt><dd><span class="check" aria-label="incluído">✓</span></dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Por que confiar">
+      <div class="wrap trust-grid">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          <div><strong>9 anos de experiência</strong><span>em sites e sistemas web</span></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg>
+          <div><strong>Backup antes de tudo</strong><span>completo, antes de qualquer alteração</span></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+          <div><strong>Cópia de teste</strong><span>nunca direto no site oficial</span></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+          <div><strong>Plano de reversão</strong><span>para voltar atrás se algo falhar</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="oferta" class="section" aria-labelledby="oferta-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Oferta</p>
+          <h2 id="oferta-title">Preço fechado, escopo claro</h2>
+          <p>O check-up é gratuito. Os pacotes pagos têm escopo fechado: o que for imprevisível se orça à parte, e só segue com o seu aceite.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <p class="card-tag">Diagnóstico</p>
+            <h3>Check-up</h3>
+            <p class="price"><span class="cur">R$</span>0</p>
+            <p class="card-desc">Relatório curto com a versão do PHP vista em público, a data de fim de suporte e uma nota de velocidade.</p>
+            <a class="btn btn-outline" href="mailto:contato@doutordosite.com.br?subject=Quero%20o%20check-up%20gratuito%20do%20meu%20site">Pedir check-up</a>
+          </article>
+
+          <article class="card">
+            <p class="card-tag">Tratamento</p>
+            <h3>Atualização de PHP</h3>
+            <p class="price"><span class="cur">R$</span>990</p>
+            <ul class="card-list">
+              <li>Backup</li>
+              <li>Cópia de teste</li>
+              <li>Checagem de compatibilidade</li>
+              <li>Atualização para PHP 8.3 ou 8.4</li>
+              <li>Correção do que essa troca quebrar</li>
+              <li>Publicação e relatório</li>
+            </ul>
+            <a class="btn btn-outline" href="mailto:contato@doutordosite.com.br?subject=Atualiza%C3%A7%C3%A3o%20de%20PHP%20(R%24%20990)">Quero este</a>
+          </article>
+
+          <article class="card card-featured">
+            <p class="badge">Mais completo</p>
+            <p class="card-tag">Tratamento completo</p>
+            <h3>Atualização + velocidade</h3>
+            <p class="price"><span class="cur">R$</span>1.290</p>
+            <ul class="card-list">
+              <li><strong>Tudo do pacote Atualização de PHP</strong></li>
+              <li>Otimização de velocidade</li>
+              <li>Medida antes e depois</li>
+            </ul>
+            <a class="btn btn-primary" href="mailto:contato@doutordosite.com.br?subject=Atualiza%C3%A7%C3%A3o%20%2B%20velocidade%20(R%24%201.290)">Quero este</a>
+          </article>
+        </div>
+
+        <div class="note-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg>
+          <div>
+            <h3>O que se orça à parte</h3>
+            <p>Código muito sob medida, tema ou plugin sem substituto compatível, nova funcionalidade, reformulação visual, troca de hospedagem ou limpeza de invasão. Se isso aparecer no diagnóstico, o trabalho no site oficial para até você aceitar um novo valor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como" class="section section-alt" aria-labelledby="como-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Como trabalhamos</p>
+          <h2 id="como-title">Cinco passos, nenhum direto no ar</h2>
+          <p>O serviço vale para sites que rodam PHP — inclusive os feitos na plataforma WordPress, quando for o caso.</p>
+        </header>
+
+        <ol class="timeline">
+          <li>
+            <span class="tl-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span>
+            <span class="tl-step">Passo 1</span>
+            <h3>Backup</h3>
+            <p>Fazemos um backup completo antes de qualquer alteração.</p>
+          </li>
+          <li>
+            <span class="tl-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></span>
+            <span class="tl-step">Passo 2</span>
+            <h3>Cópia de teste</h3>
+            <p>Trabalhamos numa cópia de teste, nunca direto no site oficial.</p>
+          </li>
+          <li>
+            <span class="tl-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L4 16.8V20h3.2l5.3-5.3a4 4 0 0 0 5.2-5.4l-2.5 2.5-2.3-.6-.6-2.3 2.4-2.6z"/></svg></span>
+            <span class="tl-step">Passo 3</span>
+            <h3>Correção e comparação</h3>
+            <p>Corrigimos o que a nova versão do PHP quebrar e comparamos as páginas principais.</p>
+          </li>
+          <li>
+            <span class="tl-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/><path d="M4 21h16"/></svg></span>
+            <span class="tl-step">Passo 4</span>
+            <h3>Publicação segura</h3>
+            <p>Só então publicamos, com um plano para voltar atrás se algo falhar.</p>
+          </li>
+          <li>
+            <span class="tl-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4h6v3H9z"/><path d="M15 5h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2"/><path d="M9 13l2 2 4-4"/></svg></span>
+            <span class="tl-step">Passo 5</span>
+            <h3>Relatório</h3>
+            <p>Você recebe um relatório com a versão final e o que mudou.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="pagamento" class="section" aria-labelledby="pag-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Pagamento e correções</p>
+          <h2 id="pag-title">Combinado por escrito</h2>
+        </header>
+        <ul class="terms">
+          <li>
+            <span class="term-num">50/50</span>
+            <p>50% na contratação e 50% na entrega, com recibo a cada pagamento. A forma de pagamento é definida no fechamento.</p>
+          </li>
+          <li>
+            <span class="term-num">Início</span>
+            <p>O trabalho começa depois da entrada e da liberação do acesso.</p>
+          </li>
+          <li>
+            <span class="term-num">7 dias</span>
+            <p>7 dias de correção por e-mail, em horário comercial, só do que a atualização tiver afetado. Sem plantão.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact" aria-labelledby="contato-title">
+      <div class="wrap contact-box">
+        <div>
+          <p class="eyebrow eyebrow-light">Contato</p>
+          <h2 id="contato-title">Comece pelo check&#8209;up gratuito</h2>
+          <p>Escreva para <a href="mailto:contato@doutordosite.com.br">contato@doutordosite.com.br</a>. O atendimento é por escrito e no seu ritmo. Se você recebeu um e-mail nosso, a resposta pode ir no mesmo fio.</p>
+        </div>
+        <a class="btn btn-primary btn-lg" href="mailto:contato@doutordosite.com.br?subject=Quero%20o%20check-up%20gratuito%20do%20meu%20site&amp;body=Ol%C3%A1%2C%20gostaria%20do%20check-up%20gratuito.%20Endere%C3%A7o%20do%20site%3A%20">
+          Pedir check-up gratuito
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section id="descadastrar" class="section section-small" aria-labelledby="desc-title">
+      <div class="wrap narrow">
+        <h2 id="desc-title">Descadastrar</h2>
+        <p>Se não quiser receber mais mensagens, envie um e-mail para <a href="mailto:contato@doutordosite.com.br?subject=Descadastrar">contato@doutordosite.com.br</a> com o assunto “Descadastrar” e o endereço que deve sair da lista. O pedido é honrado no mesmo dia. Não é preciso justificar.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>Doutor do Site · <a href="mailto:contato@doutordosite.com.br">contato@doutordosite.com.br</a></p>
+      <p><a href="privacidade.html">Política de privacidade</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var box = document.querySelector('.countdown');
+      if (!box) return;
+      var end = new Date(box.getAttribute('data-deadline')).getTime();
+      var live = box.querySelector('.cd-live'), stat = box.querySelector('.cd-static'), date = box.querySelector('.cd-date');
+      function pad(n) { return (n < 10 ? '0' : '') + n; }
+      function tick() {
+        var ms = end - Date.now();
+        if (ms <= 0) { box.querySelector('.cd-kicker').textContent = 'O suporte oficial do PHP 8.2 terminou'; return; }
+        var d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
+        box.querySelector('[data-unit="d"]').textContent = d;
+        box.querySelector('[data-unit="h"]').textContent = pad(h);
+        box.querySelector('[data-unit="m"]').textContent = pad(m);
+        stat.hidden = true; live.hidden = false; date.hidden = false;
+      }
+      tick(); setInterval(tick, 30000);
+    })();
+  </script>
+</body>
+</html>
