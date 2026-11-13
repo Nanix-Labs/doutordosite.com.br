@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Doutor do Site — atualização de PHP com segurança</title>
   <meta name="description" content="Atualização da versão do PHP do seu site, com backup, cópia de teste e preço fechado. O PHP 8.2 perde o suporte oficial em 31/12/2026.">
-  <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#0b3438">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b3438'/%3E%3Cpath d='M10 34h10l5-12 8 22 6-14 3 4h12' fill='none' stroke='%23f2b84b' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +13,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="draft-banner" role="note">Rascunho — esta página ainda não está publicada.</div>
   <a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
   <header class="site-header">
@@ -258,7 +256,12 @@
       function pad(n) { return (n < 10 ? '0' : '') + n; }
       function tick() {
         var ms = end - Date.now();
-        if (ms <= 0) { box.querySelector('.cd-kicker').textContent = 'O suporte oficial do PHP 8.2 terminou'; return; }
+        if (ms <= 0) {
+          box.querySelector('.cd-kicker').textContent = 'O PHP 8.2 já está sem suporte oficial';
+          stat.textContent = 'Desde 31/12/2026 não há mais correções de segurança.';
+          stat.hidden = false; live.hidden = true; date.hidden = true;
+          return;
+        }
         var d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
         box.querySelector('[data-unit="d"]').textContent = d;
         box.querySelector('[data-unit="h"]').textContent = pad(h);
