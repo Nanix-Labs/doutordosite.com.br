@@ -227,6 +227,8 @@ svg { flex: none; }
 .card-featured .price { color: var(--white); }
 .card-featured .price .cur { color: #9fc3c1; }
 .card-featured .card-list li::before { background-color: rgba(159, 224, 214, .18); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 12.5l3 3 7-7' fill='none' stroke='%239fe0d6' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+.card-featured .card-desc { color: #c5d9d7; }
+.card > .card-list + .card-desc { margin-top: -0.75rem; }
 .badge {
   position: absolute; top: -.85rem; left: 1.75rem;
   background: var(--accent); color: var(--accent-ink);
